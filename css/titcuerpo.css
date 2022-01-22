@@ -1,0 +1,17 @@
+/*** Header ***/
+h2{
+font-size:25px;
+color: #0090bd;
+font-weight:bold;
+position:relative; top:-10px; /*left:30%; */
+}
+#cruci{
+/*position:absolute; top:15%;left:30%;*/
+position:absolute; overflow:hidden; 
+width:100%; top:20%;
+}
+.contenid{
+position:relative;
+top:5px; width:90%; height:100%; margin:auto;
+text-align:center;
+}

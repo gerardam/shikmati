@@ -1,0 +1,81 @@
+#cajaprin{
+position:absolute; overflow:hidden; 
+width:100%; height:430px; top:20%;
+}
+.contenid{
+/*position:absolute; top:10px; left:280px; */
+position:relative;
+top:10px; width:90%; height:100%; margin:auto;
+background:rgba(255,255,255, 0.5);
+border-radius:35px; -moz-border-radius:35px; -webkit-border-radius:35px;
+}
+/*Estilo del diccionario*/
+input{
+width:50%;
+height:30px;
+font-size:20px;
+margin:1px;
+position:relative;
+left:12%;
+padding:2px;
+border:1px solid black;
+box-shadow:0px 0px 15px #1B9CD8 inset;
+-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.5) inset;
+}
+.resultado{
+width:100%;
+margin:2px;
+overflow:hidden;
+border:0px solid white;
+}
+.izquierda, .derecha{
+text-align:center;
+float:left;
+width:35%;
+margin:1px;
+border-radius: 0px 18px 18px 0px;
+padding:5px;
+font-size:20px;
+background:white;
+border: none;	
+}
+.izquierda{
+/*background:#44C001;*/
+background:#00A300;
+}
+.derecha{
+border-radius:0px 0px 0px 0px;
+position:relative;
+overflow:hidden;
+/*margin-left:-15px;
+z-index:-1;*/
+background:#2D89EF;
+
+}
+/*Nota de Aviso*/
+#notips{
+width:220px; height:220px;
+/*float:right;*/
+position:absolute;
+right:1%;
+top:7%;
+}
+.ttip{
+font-family:"Reenie Beanie",arial,sans-serif;
+font-size:180%;
+font-weight:bold;
+color:#000;
+background:#FBC701;
+height:200px;
+width:180px;
+border:none;
+/*-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+/*inclinacion de la imagen
+-o-transform:rotate(-4deg);
+-webkit-transform:rotate(-4deg);
+-moz-transform:rotate(-4deg);*/
+position:relative;
+top:5px;
+}

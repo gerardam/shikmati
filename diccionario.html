@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Diccionario</title>
+		<link rel="icon" type="image/x-icon" href="../images/shk.png" />
+        <!--STILOS DEL FONDO-->
+        <link rel="stylesheet" href="css/reset-min.css"/>
+        <link rel="stylesheet" href="css/tut.css"/>
+		<!--Notificacion
+		<link href="css/modern.css" rel="stylesheet">
+		<link href="css/modern-responsive.css" rel="stylesheet">-->
+	
+		<link rel="stylesheet" href="css/diccion.css"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+		var x;
+		x=$(document);
+		x.ready(inicio);
+
+		function inicio(){
+			var x;
+			x=$("#input");
+			x.focus(enfocar);
+			x.blur(desenfocar);
+			x.keypress(tecla);
+			}
+			function enfocar(){
+				var x=$("#input");
+				x.attr("value","");
+				}
+			function desenfocar(){
+				var x=$("#input");
+				x.attr("value","Espanol - Nahuatl");
+			}
+			function tecla(){
+				$(".resultado").hide();
+				$.ajax({
+					type: 'POST',
+					url:$("form").attr('action'),
+					data: $("form").serialize(),
+					success: function(data){
+						$(".resultado").fadeIn("slow");
+						$(".resultado").html(data);
+						}
+					})
+				}
+			
+		</script>
+		<SCRIPT LANGUAGE="javascript"> <!--Al hacer enter en el formularion no envia los datos a la otra pagina-->
+			function testForEnter() 
+			{    
+				if (event.keyCode == 13) 
+				{        
+					event.cancelBubble = true;
+					event.returnValue = false;
+			         }
+			} 
+		</SCRIPT>
+        <!--SCRIPS DEL MENU-->
+    <link rel="stylesheet" href="css/animated-menu.css"/>
+	<script src="js/jquery-1.3.js" type="text/javascript"></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/animated-menu.js" type="text/javascript"></script>
+	
+    </head>
+    <body>
+    <div id="cloud1" class="clouds">
+    	<div id="clouds-small"></div>
+    </div><!-- end clouds -->
+    <div id="cloud2" class="clouds">
+        <div id="clouds-big"></div>
+    </div><!-- end clouds -->
+	<div id="header"><!--INICIA EL MENU-->
+    	<ul>
+            <li class="green">
+                <p><a href="index.html">Inicio</a></p>
+                <p class="subtext">Pagina principal</p>
+            </li>
+            <li class="yellow">
+                <p><a href="#">Anatomia</a></p>
+				<p><a href="cuerpo.html">Cuerpo</a></p>
+				<p><a href="cabeza.html">Cabeza</a></p>
+                <!--<p class="subtext">Partes del cuerpo</p>-->
+            </li>
+            <li class="red">
+                <p><a href="#">Juegos</a></p>
+				<p><a href="crucigrama.html">Crucigrama</a></p>
+				<p><a href="memoria.html">Memorama</a></p>
+				<p><a href="el_ahorcado.html">Ahorcado</a></p>
+                <!--<p class="subtext">Juega</p>-->
+            </li>
+            <li class="blue">
+                <p><a href="#">Extras</a></p>
+                <p><a href="adivinanzas.html">Adivinanzas</a></p>
+				<p><a href="pronombre.html">Pronombres</a></p>
+				<p><a href="diccionario.html">Diccionario</a></p>
+            </li>
+            <li class="purple">
+                <p><a href="Contacto.html">Desarrollador</a></p>
+                <p class="subtext">Informacion</p>
+            </li>
+        </ul>
+	</div><!--TERMINA EL MENU-->
+	<h1>Diccionario</h1>
+	<div id="cajaprin"><!--################INICIA CODIGO DEL CUERPO#####################-->
+	<div class="contenid">
+	<div id="notips">
+		<p class="ttip">¿Tienes dudas?, busca las palabras.<br>
+		</p>
+	</div><!--******************-->
+	
+		<div id="contenedor">
+        <form action="php/busca.php?lang=es" method="post"> 
+            <input type="text" name="termino" value="Espanol - Nahuatl" maxlength="30" id="input" onkeydown="testForEnter();">
+        </form>
+        <div class="resultado">
+            
+        </div>
+		</div>
+	</div>
+    </div><!--#############TERMINA CODIGO DEL CUERPO######################-->
+    </body>
+</html>

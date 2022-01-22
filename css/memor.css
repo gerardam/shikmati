@@ -1,0 +1,34 @@
+#adiv{
+/*position:absolute; top:20%; left:35%; */
+position:absolute; overflow:hidden; 
+width:100%; top:20%;
+}
+.contenido{
+position:relative;
+top:5px; width:90%; height:100%; margin:auto;
+text-align:center;
+}
+table{
+margin:auto;
+width: 900px;
+/*border:1px #026192 solid;*/
+margin-top:10px;
+}
+.tit2{
+color:blue;
+font-size:25px; 
+font-weight:bold;
+}
+th{
+padding:5px;
+border:1px;
+text-align:center;
+/*background-color:#026192;*/
+color:White;
+}
+td{
+padding:30px;
+/*border:1px #026192 solid;*/
+border:20px #67B2FF solid;
+background-color:rgb(000,170,000);
+}

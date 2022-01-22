@@ -1,0 +1,28 @@
+#cruci{
+/*position:absolute; top:20%; left:40%; */
+position:absolute; overflow:hidden; 
+width:100%; top:20%;
+}
+.contenido{
+position:relative;
+top:5px; width:90%; height:100%; margin:auto;
+text-align:center;
+}
+.recar{
+text-decoration:none;
+font-weight:bold;
+color:#2779aa;
+font-size:16px;
+border: 1px solid #aed0ea; background: #d7ebf9;
+border-radius: 6px 6px 6px 6px;/**/
+padding: 2px 5px 2px 5px;
+/*margin-left:120px;*/
+}
+.recar:hover{
+/*border-radius: 0px 10px 0px 10px;*/
+box-shadow: 0px 0px 25px white;
+-webkit-box-shadow: 0px 0px 25px white;
+color:black;
+border: 1px solid #aed0ea;
+background: #deedf7;
+}

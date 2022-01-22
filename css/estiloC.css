@@ -1,0 +1,164 @@
+body, h1, h3, h4, h5, h6
+{
+	font-family: Segoe UI, Franklin Gothic Medium, Arial, sans-serif;
+}
+h1, h3, h4, h5, h6
+{
+	color: #000099;
+}
+h2{
+font-size:24px;
+color: #0090bd;
+font-weight:bold;
+position:relative; top:-10px; left:20px;
+}
+#cruci{
+/*position:absolute; top:20%; left:25%; */
+position:absolute; overflow:hidden; 
+width:100%; top:20%;
+}
+.contenido{
+position:relative;
+top:5px; width:80%; height:100%; margin:auto;
+/*background:rgba(255,255,255, 0.5);*/
+text-align:center;
+}
+body
+{
+	cursor: default;
+	font-size: small;
+}
+.ecw-answerbox
+{
+	color: black;
+	background-color: #FFFF00;
+	border-color: #CC0000;
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+	padding: .75em;
+	width: 240pt;
+}
+.ecw-box
+{
+	border-style: solid;
+	border-width: 1pt;
+	cursor: pointer;
+	font-size: .12in;
+	font-weight: bold;
+	height: .18in;
+	overflow: hidden;
+	text-align: center;
+	width: .18in;
+}
+.ecw-boxcheated_sel/*palabra coincide con otra*/
+{
+	background-color: #FFFF00;
+	border-color: #C00000;
+	color: #2080D0;
+}
+.ecw-boxcheated_unsel/*parte de los cuadros del crucigrama*/
+{
+	background-color: #CCFFFF;
+	border-color: #606060;
+	color: #2080D0;
+}
+.ecw-boxerror_sel
+{
+	background-color: #FFF1D7;
+	border-color: #C00000;
+	color: #BF0000;
+}
+.ecw-boxerror_unsel
+{
+	background-color: #FFF0F0;
+	border-color: #606060;
+	color: #BF0000;
+}
+.ecw-boxnormal_sel
+{
+	background-color: #FFF1D7;
+	border-color: #C00000;
+	color: #000000;
+}
+.ecw-boxnormal_unsel
+{
+	background-color: #ffffff;
+	border-color: #606060;
+	color: #000000;
+}
+.ecw-button
+{
+	width: 64pt;
+}
+.ecw-cluebox
+{
+	border-bottom-width: 1px;
+	border-color: #c0c0c0;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-style: solid;
+	border-top-width: 1px;
+	margin-top: 1em;
+	padding-bottom: .5em;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	padding-top: .5em;
+}
+.ecw-crosswordarea
+{
+background:url('../img/camp1.png');
+	/*background-color: #99FF00;*/
+	border-color: #339900;
+	border-style: solid;
+	border-width: 2px;
+	padding: .5em;
+	font-family: Segoe UI, Verdana, Arial, sans-serif;
+	font-size: small;
+}
+/*.ecw-copyright
+{
+	margin-bottom: 1em;
+	font-size: x-small;
+	font-family: Segoe UI, Franklin Gothic Medium, Arial, sans-serif;
+}*/
+.ecw-input
+{
+	font-family: Segoe UI, Franklin Gothic Medium, Arial, sans-serif;
+}
+.ecw-wordlabel
+{
+	text-transform: uppercase;
+	margin: 0;
+}
+.ecw-wordinfo
+{
+	font-size: 8pt;
+	color: #808080;
+}
+.ecw-worderror
+{
+	color: #c00000;
+	font-weight: bold;
+	display: none;
+	margin-top: 1em;
+}
+/*Boton de recargar Pagina*/
+.recar{
+text-decoration:none;
+font-weight:bold;
+color:white;
+/*border:1px solid white;*/
+background-color: #025988;
+/*border-radius: 10px 0px 10px 0px;*/
+padding: 2px 5px 2px 5px;
+margin-left:10px;
+}
+.recar:hover{
+/*border-radius: 0px 10px 0px 10px;*/
+box-shadow: 0px 0px 25px white;
+-webkit-box-shadow: 0px 0px 25px white;
+-o-box-shadow:0px 0px 25px white;
+color:black;
+background-color: #ffffff;
+}

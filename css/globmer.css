@@ -1,0 +1,10 @@
+#memo{
+/*position:absolute; top:20%; left:40%; */
+position:absolute; overflow:hidden; 
+width:100%; top:20%;
+}
+#mor{
+position:relative;
+top:5px; width:90%; height:100%; margin:auto;
+text-align:center;
+}

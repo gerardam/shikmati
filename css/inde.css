@@ -1,0 +1,22 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+font-family:Arial;
+background:
+	url(../images/bn33.png) no-repeat top left,
+	url(../images/bng.png) no-repeat fixed left bottom,
+	url(../images/pab.png) repeat-x fixed left bottom,
+	url(../images/bg2.png) no-repeat fixed top left,
+	url(../images/bagk.png) repeat-x fixed 10% 100%,
+	url(../images/linb.png) repeat-x fixed top left;				
+background-color:#fff;
+}
+#content{
+margin:0 auto;
+}
+#desar{
+	position:absolute;
+	right:30%;
+}
