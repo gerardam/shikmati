@@ -2,8 +2,8 @@
 //Busqueda exacta
 if($_GET['lang'] == "es"){
 // Conectando, seleccionando la base de datos
-$dsn = "Driver={SQL Server};Server=qhncpzmmlz.database.windows.net;Database=shikmatiBD;Integrated Security=SSPI;Persist Security Info=False;";
-$conn = odbc_connect( $dsn, 'gerardam', '10TENsaiga6' );
+$dsn = "Driver={SQL Server};Server=qhncpzmmlz;Database=shikmatiBD;Integrated Security=SSPI;Persist Security Info=False;";
+$conn = odbc_connect( $dsn, 'ge', '*******' );
 if (!$conn) { 
     exit( "Error al conectar: " . $conn);
 }
@@ -31,8 +31,8 @@ odbc_close( $conn );
 //Busqueda aproximada
 
 // Conectando, seleccionando la base de datos
-$dsn = "Driver={SQL Server};Server=qhncpzmmlz.database.windows.net;Database=shikmatiBD;Integrated Security=SSPI;Persist Security Info=False;";
-$conn = odbc_connect( $dsn, 'gerardam', '10TENsaiga6' );
+$dsn = "Driver={SQL Server};Server=qhncpzmmlz;Database=shikmatiBD;Integrated Security=SSPI;Persist Security Info=False;";
+$conn = odbc_connect( $dsn, 'ge', '*******' );
 if (!$conn) { 
     exit( "Error al conectar: " . $conn);
 }
